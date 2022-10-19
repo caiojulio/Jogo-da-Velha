@@ -70,7 +70,7 @@ def verificaPosicao(indice, jgdavelha, jogador):
         jgdavelha[indice] = f'{jogador}'
         return jgdavelha
 
-#funções necessarias para a interface grafica pygame
+#funções necessarias para a interface grafica pygame (EM DESENVOLVIMENTO)
 
 import pygame as pg
 
