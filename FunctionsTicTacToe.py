@@ -1,6 +1,4 @@
-#documentos com funções utilizadas no projeto de criação de jogo da velha para terminal, o intuito é reutilizar as mesmas funções criadas sem chamar o programa inteiro
-
-#funções necessarias para o terminal
+#funções necessarias para o jogo no terminal
 
 def TrataVitorias(valor, jgdavelha):
 
@@ -69,20 +67,3 @@ def verificaPosicao(indice, jgdavelha, jogador):
     else:
         jgdavelha[indice] = f'{jogador}'
         return jgdavelha
-
-#funções necessarias para a interface grafica pygame (EM DESENVOLVIMENTO)
-
-import pygame as pg
-
-def linhasTabuleiro(window):
-
-
-    #linhas verticais
-
-    pg.draw.line(window, (248,248,255), (170, 100), (170, 545), 13)
-    pg.draw.line(window, (248,248,255), (300, 100), (300, 545), 13)
-
-    #linhas Horizontais
-
-    pg.draw.line(window, (248,248,255), (40, 230), (440, 230), 13)
-    pg.draw.line(window, (248,248,255), (40, 390), (440, 390), 13) #argumentos: janela criada, cor, x,y(inicio da linha), x,y(termino da linha), espessura da linha
